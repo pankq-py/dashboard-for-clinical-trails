@@ -70,7 +70,6 @@ import LogoutOutlinedIcon from '@mui/icons-material/LogoutOutlined';
 import Brightness4RoundedIcon from '@mui/icons-material/Brightness4Rounded';
 import Brightness7RoundedIcon from '@mui/icons-material/Brightness7Rounded';
 
-// import SaamaLogo from '../Images/Saama-Logo-white.png';
 import HomeLogo from '../Images/HomeLogo.png';
 
 // for toast
