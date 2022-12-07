@@ -53,18 +53,19 @@ export default function ListOfParticipants() {
                     }
                     actions={[
                         {
-                            icon: () => <VisibilityIcon/>,
+                            icon: () => <VisibilityIcon />,
                             tooltip: 'View User',
                             onClick: (event, rowData) => {
                                 // this.redirectToReport(rowData);
                                 console.log("Row Data: ", rowData);
+                                alert("First Name: " + rowData.first_name + "\nLast Name: "+rowData.last_name);
                                 <Link to={`/ListOfParticipants/ParticipantsDetails/${rowData.id}`}>More info!</Link>
                             }
                         },
                         rowData => ({
                             icon: 'delete',
                             tooltip: 'Delete User',
-                            onClick: (event, rowData) => confirm("You want to delete " + rowData.name),
+                            onClick: (event, rowData) => confirm("You want to delete " + rowData.first_name),
                             disabled: rowData.age <= 25
                         }),
                         {
